@@ -1,0 +1,50 @@
+# 系统文件
+.DS_Store
+Thumbs.db
+*.orig
+
+# 临时文件
+*.swp
+*.swo
+.env
+*~
+.python-version
+.nvimlog
+
+# zsh 缓存
+.zinit/
+.zcompdump*
+.zsh_history
+
+# Powerlevel10k 缓存
+.p10k.zsh.backup
+
+# 字体缓存（从 GitHub 下载）
+.cache/fonts/
+
+# 子仓库配置
+rime
+rime/
+private/
+rime_sbzrjp/
+sbsrf/
+aliases/
+
+config/nvim/lua/plugins/im-select.lua
+
+aws
+
+config/nvim/tmp/*
+config/yazi/flavors/*
+config/sway/*
+config/nvim/sbzr.nvim.im.db/*
+config/nvim/local/sbzr.nvim.im
+
+# 环境变量文件
+plugins/avante/.env
+config/nvim/.nvimlog
+config/nvim/tmp/
+config/nvim/sbzr.nvim.im.db/
+config/nvim/lazy-lock.json
+config/git-credentials
+pat.sh
