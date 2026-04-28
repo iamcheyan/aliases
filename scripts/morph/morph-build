@@ -5,7 +5,7 @@ set -euo pipefail
 # Usage: morph-build [--static]
 # Place this in ~/.local/bin/ (or anywhere in PATH)
 
-ROOT_DIR="${MORPH_ROOT:-$HOME/Development/mistermorph-bedrock-profile}"
+ROOT_DIR="${MORPH_ROOT:-$HOME/Development/mistermorph}"
 cd "${ROOT_DIR}"
 
 # Activate goenv if available
@@ -37,7 +37,7 @@ fi
 
 echo "==> Building backend"
 go build -o ./bin/mistermorph ./cmd/mistermorph
-echo "Done: ./bin/mistermorph"
+echo "Done: $(realpath ./bin/mistermorph)"
 
 # Copy and sanitize local config
 LOCAL_CONFIG="$HOME/.morph/config.yaml"

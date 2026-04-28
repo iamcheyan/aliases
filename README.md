@@ -24,8 +24,8 @@ git submodule add https://github.com/iamcheyan/aliases aliases
 在 `.zshrc` 中加入以下自动加载逻辑：
 ```zsh
 # 自动加载 aliases 目录下的所有 .conf 文件
-if [[ -d ~/.dotfiles/aliases ]]; then
-    for alias_file in ~/.dotfiles/aliases/*.conf(N); do
+if [[ -d ~/dotfiles/aliases ]]; then
+    for alias_file in ~/dotfiles/aliases/*.conf(N); do
         source "$alias_file"
     done
 fi
